@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'bel_beverages.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'your_db_name',
+        'NAME': 'User_db',
         'USER': 'your_db_user',
         'PASSWORD': 'your_db_password',
         'HOST': 'localhost',
