@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
 from .forms import SignupForm, LoginForm
 
-# Dummy user store for demonstration (replace with real model logic later)
 USERS = {}
 
 def signup_view(request):
@@ -10,7 +9,7 @@ def signup_view(request):
         if form.is_valid():
             mobile = form.cleaned_data['mobile']
             password = form.cleaned_data['password']
-            USERS[mobile] = password  # Replace with real user creation
+            USERS[mobile] = password  
             return redirect('login')
     else:
         form = SignupForm()
